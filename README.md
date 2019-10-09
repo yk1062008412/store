@@ -1,6 +1,6 @@
 # store
 
-vue + vant
+vue + vant + mockjs
 
 ## Project setup
 ```
