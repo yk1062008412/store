@@ -1,5 +1,7 @@
 # store
 
+vue + vant
+
 ## Project setup
 ```
 npm install

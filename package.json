@@ -1,6 +1,8 @@
 {
-  "name": "tmp",
+  "name": "store",
   "version": "0.1.0",
+  "description": "store",
+  "author": "yk1062008412",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
