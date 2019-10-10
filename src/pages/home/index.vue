@@ -44,6 +44,7 @@
                 <van-grid-item icon="photo-o" text="品牌6" />
             </van-grid>
         </div>
+        <Tabbar />
     </div>
 </template>
 
@@ -52,11 +53,13 @@
 import Vue from 'vue';
 import { Search, Swipe, SwipeItem, Grid, GridItem, Divider } from 'vant';
 import { getUserInfo } from '@/api/common';
-
+// eslint-disable-next-line
 Vue.use(Search).use(Swipe).use(SwipeItem).use(Grid).use(GridItem).use(Divider);
 
 export default {
-    name: 'home',
+    name: 'Home',
+    components: {
+    },
     data () {
         return {
             name: 'yk',
