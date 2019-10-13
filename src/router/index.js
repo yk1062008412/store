@@ -4,10 +4,11 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 const routes = [
-    { path: '/home', component: () => import('../pages/home') },
-    { path: '/mine', component: () => import('../pages/mine') },
-    { path: '/shop', component: () => import('../pages/shop') },
-    { path: '/test', component: () => import('../pages/test') }
+    { path: '/home', component: () => import('../pages/home') }, // 首页
+    { path: '/mine', component: () => import('../pages/mine') }, // 我的
+    { path: '/shop', component: () => import('../pages/shop') }, // 购物车
+    { path: '/test', component: () => import('../pages/test') }, //测试
+    { path: '/store',component: () => import('../pages/home/store')} // 商品
 ]
 
 export default new VueRouter({

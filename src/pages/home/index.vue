@@ -36,12 +36,12 @@
         <van-divider class="divider-title">品牌</van-divider>
         <div>
             <van-grid :column-num="3">
-                <van-grid-item icon="photo-o" text="品牌1" />
-                <van-grid-item icon="photo-o" text="品牌2" />
-                <van-grid-item icon="photo-o" text="品牌3" />
-                <van-grid-item icon="photo-o" text="品牌4" />
-                <van-grid-item icon="photo-o" text="品牌5" />
-                <van-grid-item icon="photo-o" text="品牌6" />
+                <van-grid-item icon="photo-o" text="品牌1" to="/store" />
+                <van-grid-item icon="photo-o" text="品牌2" to="/store" />
+                <van-grid-item icon="photo-o" text="品牌3" to="/store" />
+                <van-grid-item icon="photo-o" text="品牌4" to="/store" />
+                <van-grid-item icon="photo-o" text="品牌5" to="/store" />
+                <van-grid-item icon="photo-o" text="品牌6" to="/store" />
             </van-grid>
         </div>
     </div>
