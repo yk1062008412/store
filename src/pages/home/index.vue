@@ -11,26 +11,18 @@
                 />
             </form>
         </div>
-        <!-- <div class="swiper-container">
-            <van-swipe :autoplay="3000" indicator-color="white">
-                <van-swipe-item>1</van-swipe-item>
-                <van-swipe-item>2</van-swipe-item>
-                <van-swipe-item>3</van-swipe-item>
-                <van-swipe-item>4</van-swipe-item>
-            </van-swipe>
-        </div> -->
         <div class="banner-pic">
             <img src="http://img1.imgtn.bdimg.com/it/u=1563980539,1672265910&fm=26&gp=0.jpg" alt="这是一个banner图">
         </div>
         <van-divider class="divider-title">分类</van-divider>
         <div>
             <van-grid :column-num="3">
-                <van-grid-item icon="photo-o" text="纸杯" />
-                <van-grid-item icon="photo-o" text="塑料" />
-                <van-grid-item icon="photo-o" text="刀子" />
-                <van-grid-item icon="photo-o" text="叉子" />
-                <van-grid-item icon="photo-o" text="勺子" />
-                <van-grid-item icon="photo-o" text="套装" />
+                <van-grid-item icon="photo-o" text="纸杯" to="/store" />
+                <van-grid-item icon="photo-o" text="塑料" to="/store" />
+                <van-grid-item icon="photo-o" text="刀子" to="/store" />
+                <van-grid-item icon="photo-o" text="叉子" to="/store" />
+                <van-grid-item icon="photo-o" text="勺子" to="/store" />
+                <van-grid-item icon="photo-o" text="全部" to="/allstore" />
             </van-grid>
         </div>
         <van-divider class="divider-title">品牌</van-divider>
@@ -44,19 +36,22 @@
                 <van-grid-item icon="photo-o" text="品牌6" to="/store" />
             </van-grid>
         </div>
+        <Tabbar />
     </div>
 </template>
 
 
 <script>
-import Vue from 'vue';
-import { Search, Swipe, SwipeItem, Grid, GridItem, Divider } from 'vant';
+// import Vue from 'vue';
+// import { Search, Swipe, SwipeItem, Grid, GridItem, Divider } from 'vant';
 import { getUserInfo } from '@/api/common';
-
-Vue.use(Search).use(Swipe).use(SwipeItem).use(Grid).use(GridItem).use(Divider);
+// eslint-disable-next-line
+// Vue.use(Search).use(Swipe).use(SwipeItem).use(Grid).use(GridItem).use(Divider);
 
 export default {
-    name: 'home',
+    name: 'Home',
+    components: {
+    },
     data () {
         return {
             name: 'yk',
